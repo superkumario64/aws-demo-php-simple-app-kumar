@@ -9,4 +9,4 @@ tests:
     command: vendor/bin/solano-phpunit
     config: phpunit.xml
     files:
-      - tests/**Test.php
+      - phpunit/**Test.php
