@@ -2,6 +2,17 @@
 php:
   version: '5.6'
 
+hooks:
+  pre_setup: composer.phar install
+
+# Cache vendor directory for faster builds
+cache:
+  key_paths:
+    - composer.json
+    - composer.lock
+  save_paths:
+    - vendor
+
 tests:
   - type: phpunit
     mode: parallel
