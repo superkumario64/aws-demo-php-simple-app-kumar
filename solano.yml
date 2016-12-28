@@ -4,7 +4,6 @@ php:
 
 hooks:
   pre_setup: composer.phar install
-  post_setup: 'script/post_build.sh'
 
 # Cache vendor directory for faster builds
 cache:
